@@ -19,6 +19,9 @@ $(document).ajaxError(function(e, jqXHR, settings, exception) {
 	    case 500:
 	    	alert("500 Internal Server Error");
 	        break;
+	    case 600:
+		alert("600 soy javascript");
+		break;
 	    default:
 	            alert("Un error ha ocurrido: " + jqXHR.status);
 	    }
