@@ -8,7 +8,7 @@ $(document).ajaxError(function(e, jqXHR, settings, exception) {
 			alert("404 Page Not Found");
 	        break;
 	    case 200:
-	        alert("200 OK!");
+	        alert("200 EXCELENTE!");
 	        break;
 	    case 403:
 	    	alert("403 Forbidden");
