@@ -44,12 +44,12 @@ function myFunction( xml ) {
 	var i;
 	var xmlDoc = $.parseXML(xml);
 	var table="<tr><th>Artista</th><th>Titulo</th></tr>";
-	$("#demo").empty();
+	$("#demostracion").empty();
 
 	$xml = $( xmlDoc );
 	$(xml).find("CD").each(function() {
 		table += "<tr><td>" + $(this).find("ARTIST").text() + "</td><td>" + 
 		$(this).find("TITLE").text() + "</td></tr>";
 	});
-	$("#demo").html(table);
+	$("#demostracion").html(table);
 }
